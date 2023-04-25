@@ -1,3 +1,25 @@
+:root{
+
+    --primary-color: #fff;
+    --secondary-color: #f6f6f6;
+    --text-color:#000;
+
+    --inverse-primary-color: #000;
+    --inverse-text-color: #fff;
+
+    --half-unit: 5px;
+    --unit: 10px;
+    --double-unit: 20px;
+    --quad-unit: 40px;
+
+    --radius: 5px;
+    
+}
+
+
+
+
+
 
 *{
     margin: 0;
@@ -5,9 +27,13 @@
     box-sizing: border-box;
 }
 
+textarea:focus, input:focus{
+    outline: none;
+}
+
 a{
     text-decoration: none;
-    color: #000;
+    color: var(--text-color);
 }
 
 .hidden{
@@ -21,20 +47,31 @@ a{
     align-items: center;
 
     padding: 5px 10px;
-    border-radius: 5px;
+    border-radius: var(--radius);
     cursor: pointer;
 
-    background-color: rgba(0, 0, 0, 0);
-    color: #000;
-    border: 1px solid #f6f6f6;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: 1px solid var(--secondary-color);
 }
 
 .button-inverted{
     padding: 5px 10px;
-    border-radius: 5px;
+    border-radius: var(--radius);
     cursor: pointer;
 
-    background-color: #000;
-    color: #fff;
-    border: 1px solid #000;
+    background-color: var(--inverse-primary-color);
+    color: var(--inverse-text-color);
+    border: 1px solid var(--inverse-primary-color);
+}
+
+select{
+
+    padding: 5px 10px;
+    border-radius: var(--radius);
+    cursor: pointer;
+
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: 1px solid var(--secondary-color); 
 }

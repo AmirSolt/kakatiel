@@ -21,7 +21,15 @@
 <style>
 
   #logo-h{
-    margin: 0 10px 0 10px;
+    padding-top: var(--double-unit) ;
+    padding-left: var(--quad-unit) ;
+  }
+
+  @media only screen and (max-width: 600px) {
+    #logo-h{
+    padding-top: var(--unit) ;
+    padding-left: var(--double-unit) ;
+  }
   }
 
 </style>

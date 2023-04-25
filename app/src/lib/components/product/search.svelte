@@ -78,6 +78,8 @@
     justify-content: center;
     align-items: center;
     padding: 5px;
+
+    
 }
 
 .wrap{
@@ -94,8 +96,15 @@
 .searchTerm {
   width: 100%;
   border: none;
-  border-bottom: 1px solid #000;
-  padding: 2px;
+  background-color: var(--secondary-color);
+  border-radius: var(--radius) 0 0  var(--radius);
+  padding: 10px;
+
+  height: 36px;
+}
+
+.searchTerm:focus{
+  filter:brightness(0.97);
 }
 
 
@@ -105,9 +114,23 @@
   height: 36px;
 
 
+  background-color: var(--secondary-color);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  
+
   text-align: center;
   cursor: pointer;
   border: none;
+
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .wrap{
+    width: 80%;
+}
+
 
 }
 
